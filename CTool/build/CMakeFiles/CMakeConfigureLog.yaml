@@ -24,7 +24,7 @@ events:
       The output was:
       0
       Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-      Compilaci├│n iniciada a las 21/11/2025 19:14:14.
+      Compilaci├│n iniciada a las 23/11/2025 23:44:01.
       
       Proyecto "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\3.31.6-msvc6\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.52
+      Tiempo transcurrido 00:00:00.44
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-      Compilaci├│n iniciada a las 21/11/2025 19:14:14.
+      Compilaci├│n iniciada a las 23/11/2025 23:44:02.
       
       Proyecto "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\3.31.6-msvc6\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Advertencia(s)
           0 Errores
       
-      Tiempo transcurrido 00:00:00.46
+      Tiempo transcurrido 00:00:00.45
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-717h0e"
-      binary: "D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-717h0e"
+      source: "D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-nvzg3k"
+      binary: "D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-nvzg3k"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-717h0e'
+        Change Dir: 'D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-nvzg3k'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_df78f.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ebff4.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
         Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-        Compilaci├│n iniciada a las 21/11/2025 19:14:15.
+        Compilaci├│n iniciada a las 23/11/2025 23:44:03.
         
-        Proyecto "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-717h0e\\cmTC_df78f.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvzg3k\\cmTC_ebff4.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_df78f.dir\\Debug\\".
+          Creando directorio "cmTC_ebff4.dir\\Debug\\".
           La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-717h0e\\Debug\\".
-          Creando directorio "cmTC_df78f.dir\\Debug\\cmTC_df78f.tlog\\".
+          Creando directorio "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvzg3k\\Debug\\".
+          Creando directorio "cmTC_ebff4.dir\\Debug\\cmTC_ebff4.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_df78f.dir\\Debug\\cmTC_df78f.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_df78f.dir\\Debug\\cmTC_df78f.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_ebff4.dir\\Debug\\cmTC_ebff4.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_ebff4.dir\\Debug\\cmTC_ebff4.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_df78f.dir\\Debug\\\\" /Fd"cmTC_df78f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ebff4.dir\\Debug\\\\" /Fd"cmTC_ebff4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.38.33145 para x86
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_df78f.dir\\Debug\\\\" /Fd"cmTC_df78f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ebff4.dir\\Debug\\\\" /Fd"cmTC_ebff4.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-717h0e\\Debug\\cmTC_df78f.exe" /INCREMENTAL /ILK:"cmTC_df78f.dir\\Debug\\cmTC_df78f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-717h0e/Debug/cmTC_df78f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-717h0e/Debug/cmTC_df78f.lib" /MACHINE:X86  /machine:X86 cmTC_df78f.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_df78f.vcxproj -> D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-717h0e\\Debug\\cmTC_df78f.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvzg3k\\Debug\\cmTC_ebff4.exe" /INCREMENTAL /ILK:"cmTC_ebff4.dir\\Debug\\cmTC_ebff4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-nvzg3k/Debug/cmTC_ebff4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-nvzg3k/Debug/cmTC_ebff4.lib" /MACHINE:X86  /machine:X86 cmTC_ebff4.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_ebff4.vcxproj -> D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvzg3k\\Debug\\cmTC_ebff4.exe
         FinalizeBuildStatus:
-          Se eliminar├í el archivo "cmTC_df78f.dir\\Debug\\cmTC_df78f.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_df78f.dir\\Debug\\cmTC_df78f.tlog\\cmTC_df78f.lastbuildstate".
-        Compilaci├│n del proyecto terminada "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-717h0e\\cmTC_df78f.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_ebff4.dir\\Debug\\cmTC_ebff4.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_ebff4.dir\\Debug\\cmTC_ebff4.tlog\\cmTC_ebff4.lastbuildstate".
+        Compilaci├│n del proyecto terminada "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-nvzg3k\\cmTC_ebff4.vcxproj" (destinos predeterminados).
         
         Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.69
+        Tiempo transcurrido 00:00:00.45
         
       exitCode: 0
   -
@@ -210,8 +210,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-n70zgf"
-      binary: "D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-n70zgf"
+      source: "D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-5zbqls"
+      binary: "D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-5zbqls"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -221,40 +221,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-n70zgf'
+        Change Dir: 'D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-5zbqls'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_2685e.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5f16f.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
         Versi├│n de MSBuild 17.14.23+b0019275e para .NET Framework
-        Compilaci├│n iniciada a las 21/11/2025 19:14:16.
+        Compilaci├│n iniciada a las 23/11/2025 23:44:04.
         
-        Proyecto "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n70zgf\\cmTC_2685e.vcxproj" en nodo 1 (destinos predeterminados).
+        Proyecto "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zbqls\\cmTC_5f16f.vcxproj" en nodo 1 (destinos predeterminados).
         PrepareForBuild:
-          Creando directorio "cmTC_2685e.dir\\Debug\\".
+          Creando directorio "cmTC_5f16f.dir\\Debug\\".
           La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
-          Creando directorio "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n70zgf\\Debug\\".
-          Creando directorio "cmTC_2685e.dir\\Debug\\cmTC_2685e.tlog\\".
+          Creando directorio "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zbqls\\Debug\\".
+          Creando directorio "cmTC_5f16f.dir\\Debug\\cmTC_5f16f.tlog\\".
         InitializeBuildStatus:
-          Se crear├í "cmTC_2685e.dir\\Debug\\cmTC_2685e.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
-          Aplicando tarea Touch a "cmTC_2685e.dir\\Debug\\cmTC_2685e.tlog\\unsuccessfulbuild".
+          Se crear├í "cmTC_5f16f.dir\\Debug\\cmTC_5f16f.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_5f16f.dir\\Debug\\cmTC_5f16f.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2685e.dir\\Debug\\\\" /Fd"cmTC_2685e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5f16f.dir\\Debug\\\\" /Fd"cmTC_5f16f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Compilador de optimizaci├│n de C/C++ de Microsoft (R) versi├│n 19.38.33145 para x86
           (C) Microsoft Corporation. Todos los derechos reservados.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2685e.dir\\Debug\\\\" /Fd"cmTC_2685e.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5f16f.dir\\Debug\\\\" /Fd"cmTC_5f16f.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n70zgf\\Debug\\cmTC_2685e.exe" /INCREMENTAL /ILK:"cmTC_2685e.dir\\Debug\\cmTC_2685e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-n70zgf/Debug/cmTC_2685e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-n70zgf/Debug/cmTC_2685e.lib" /MACHINE:X86  /machine:X86 cmTC_2685e.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_2685e.vcxproj -> D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n70zgf\\Debug\\cmTC_2685e.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zbqls\\Debug\\cmTC_5f16f.exe" /INCREMENTAL /ILK:"cmTC_5f16f.dir\\Debug\\cmTC_5f16f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-5zbqls/Debug/cmTC_5f16f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/CMakeScratch/TryCompile-5zbqls/Debug/cmTC_5f16f.lib" /MACHINE:X86  /machine:X86 cmTC_5f16f.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_5f16f.vcxproj -> D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zbqls\\Debug\\cmTC_5f16f.exe
         FinalizeBuildStatus:
-          Se eliminar├í el archivo "cmTC_2685e.dir\\Debug\\cmTC_2685e.tlog\\unsuccessfulbuild".
-          Aplicando tarea Touch a "cmTC_2685e.dir\\Debug\\cmTC_2685e.tlog\\cmTC_2685e.lastbuildstate".
-        Compilaci├│n del proyecto terminada "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n70zgf\\cmTC_2685e.vcxproj" (destinos predeterminados).
+          Se eliminar├í el archivo "cmTC_5f16f.dir\\Debug\\cmTC_5f16f.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_5f16f.dir\\Debug\\cmTC_5f16f.tlog\\cmTC_5f16f.lastbuildstate".
+        Compilaci├│n del proyecto terminada "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5zbqls\\cmTC_5f16f.vcxproj" (destinos predeterminados).
         
         Compilaci├│n correcta.
             0 Advertencia(s)
             0 Errores
         
-        Tiempo transcurrido 00:00:00.45
+        Tiempo transcurrido 00:00:00.46
         
       exitCode: 0
   -

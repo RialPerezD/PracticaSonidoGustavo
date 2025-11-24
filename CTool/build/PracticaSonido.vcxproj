@@ -116,11 +116,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>D:\Clase\PracticaSonidoGustavo\CTool\deps\ESAT_rev248\bin\ESAT.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>D:\Clase\PracticaSonidoGustavo\CTool\deps\ESAT_rev248\bin\ESAT_d.lib;D:\Clase\PracticaSonidoGustavo\CTool\deps\OpenAL\libs\Win32\OpenAL32.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>D:/Clase/PracticaSonidoGustavo/CTool/build/Debug/PracticaSonido.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/Clase/PracticaSonidoGustavo/CTool/build/Debug/PracticaSonido.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -162,11 +163,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>D:\Clase\PracticaSonidoGustavo\CTool\deps\ESAT_rev248\bin\ESAT.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>D:\Clase\PracticaSonidoGustavo\CTool\deps\ESAT_rev248\bin\ESAT_d.lib;D:\Clase\PracticaSonidoGustavo\CTool\deps\OpenAL\libs\Win32\OpenAL32.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>D:/Clase/PracticaSonidoGustavo/CTool/build/Release/PracticaSonido.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/Clase/PracticaSonidoGustavo/CTool/build/Release/PracticaSonido.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -208,11 +210,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>D:\Clase\PracticaSonidoGustavo\CTool\deps\ESAT_rev248\bin\ESAT.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>D:\Clase\PracticaSonidoGustavo\CTool\deps\ESAT_rev248\bin\ESAT_d.lib;D:\Clase\PracticaSonidoGustavo\CTool\deps\OpenAL\libs\Win32\OpenAL32.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>D:/Clase/PracticaSonidoGustavo/CTool/build/MinSizeRel/PracticaSonido.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/Clase/PracticaSonidoGustavo/CTool/build/MinSizeRel/PracticaSonido.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -253,11 +256,12 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>D:\Clase\PracticaSonidoGustavo\CTool\deps\ESAT_rev248\bin\ESAT.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>D:\Clase\PracticaSonidoGustavo\CTool\deps\ESAT_rev248\bin\ESAT_d.lib;D:\Clase\PracticaSonidoGustavo\CTool\deps\OpenAL\libs\Win32\OpenAL32.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;Ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>D:/Clase/PracticaSonidoGustavo/CTool/build/RelWithDebInfo/PracticaSonido.lib</ImportLibrary>
       <ProgramDataBaseFile>D:/Clase/PracticaSonidoGustavo/CTool/build/RelWithDebInfo/PracticaSonido.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -324,7 +328,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="D:\Clase\PracticaSonidoGustavo\CTool\src\drawable.cpp" />
     <ClCompile Include="D:\Clase\PracticaSonidoGustavo\CTool\src\main.cpp" />
+    <ClCompile Include="D:\Clase\PracticaSonidoGustavo\CTool\src\sound.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

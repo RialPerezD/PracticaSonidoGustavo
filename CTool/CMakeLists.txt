@@ -41,13 +41,21 @@ set_target_properties(PracticaSonido PROPERTIES
 #   Librerías externas
 # -------------------------------
 target_link_libraries(PracticaSonido
-    ${PROJECT_SOURCE_DIR}/deps/ESAT_rev248/bin/ESAT.lib
+    ${PROJECT_SOURCE_DIR}/deps/ESAT_rev248/bin/ESAT_d.lib
+    ${PROJECT_SOURCE_DIR}/deps/OpenAL/libs/Win32/OpenAL32.lib
     opengl32.lib
     user32.lib
     gdi32.lib
     shell32.lib
     Ws2_32.lib
 )
+
+if(MSVC)
+    # Desactiva SAFESEH para este target
+    set_target_properties(PracticaSonido PROPERTIES
+        LINK_FLAGS "/SAFESEH:NO"
+    )
+endif()
 
 # -------------------------------
 #   Carpeta donde se generará el exe
