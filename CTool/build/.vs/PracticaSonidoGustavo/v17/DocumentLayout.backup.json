@@ -18,7 +18,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 261,
+          "DockedWidth": 223,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -29,9 +29,9 @@
               "RelativeDocumentMoniker": "..\\src\\sound.cpp",
               "ToolTip": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\src\\sound.cpp",
               "RelativeToolTip": "..\\src\\sound.cpp",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAUwJ4AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAEwOUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-23T22:44:34.875Z",
+              "WhenOpened": "2025-11-24T10:20:54.458Z",
               "EditorCaption": ""
             },
             {
@@ -42,7 +42,7 @@
               "RelativeDocumentMoniker": "..\\src\\main.cpp",
               "ToolTip": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\src\\main.cpp",
               "RelativeToolTip": "..\\src\\main.cpp",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAEwKAAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAAN4AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-23T22:44:18.932Z",
               "EditorCaption": ""
@@ -50,7 +50,7 @@
           ]
         },
         {
-          "DockedWidth": 139,
+          "DockedWidth": 177,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -61,7 +61,7 @@
               "RelativeDocumentMoniker": "..\\include\\sound.h",
               "ToolTip": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\include\\sound.h",
               "RelativeToolTip": "..\\include\\sound.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAADwvxoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-23T23:31:38.225Z",
               "EditorCaption": ""

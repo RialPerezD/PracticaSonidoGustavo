@@ -21,6 +21,14 @@ double current_time, last_time;
 // --- Map data ---
 Board board;
 int tileSize = 16;
+
+std::vector<std::pair<int, int>> enemyPos = 
+{ 
+	{2,40},
+	{9,25},
+	{56,4},
+	{10,5}
+};
 // --- *** ---
 
 // --- Drawables ---
@@ -42,8 +50,10 @@ char buffer[32];
 // --- Sound Manager ---
 AudioManager audio;
 int backgroundMusic = -1;
+int nightMusic = -1;
 int tabernMusic = -1;
 bool outside = true;
+std::vector<int> enemyMusicIdList = {};
 // --- *** ---
 
 
@@ -93,19 +103,10 @@ void InitAllDrawables() {
 	for (int i = 0; i < 4; i++) {
 		drawableList.push_back(
 			LoadSprite("../assets/Dino.png", 0.25f, 0.25f));
+
+		drawableList.at(i + 1).posX = enemyPos[i].first;
+		drawableList.at(i + 1).posY = enemyPos[i].second;
 	}
-
-	drawableList.at(1).posX = 2;
-	drawableList.at(1).posY = 40;
-
-	drawableList.at(2).posX = 9;
-	drawableList.at(2).posY = 25;
-
-	drawableList.at(3).posX = 56;
-	drawableList.at(3).posY = 4;
-
-	drawableList.at(4).posX = 10;
-	drawableList.at(4).posY = 5;
 
 	//Player
 	player = LoadSprite("../assets/Pj.png");
@@ -166,6 +167,21 @@ void UpdateInput() {
 
 void ChangeDayCicle() {
 	stepAmmount = 32;
+
+	if (isDay) {
+		audio.Crossfade(backgroundMusic, nightMusic, 3.f);
+
+		for (int i = 0; i < 4; i++) {
+			audio.Play(enemyMusicIdList[i], true);
+		}
+	} else {
+		audio.Crossfade(nightMusic, backgroundMusic, 3.f);
+
+		for (int i = 0; i < 4; i++) {
+			audio.Stop(enemyMusicIdList[i]);
+		}
+	}
+
 	isDay = !isDay;
 }
 
@@ -185,8 +201,26 @@ void InitBaseMusic() {
 
 	backgroundMusic = audio.LoadWav("../assets/fondo.wav");
 	tabernMusic = audio.LoadWav("../assets/casa.wav");
+	nightMusic = audio.LoadWav("../assets/noche.wav");
 
-	audio.Play(backgroundMusic);
+	audio.SetVolume(nightMusic, 0.5f);
+
+	for (int i = 0; i < 4; i++) {
+		int enemyMusicId = audio.LoadWav("../assets/a.wav");
+		audio.Register2DSound(
+			enemyMusicId,
+			enemyPos[i].first,
+			enemyPos[i].second,
+			10.f
+		);
+		enemyMusicIdList.push_back(enemyMusicId);
+	}
+
+	int bird = audio.LoadWav("../assets/bird.wav");
+	audio.Register2DSound(bird, 37, 22, 20.f);
+	audio.Play(bird, true);
+
+	//audio.Play(backgroundMusic, true);
 }
 
 
@@ -212,6 +246,7 @@ int esat::main(int argc, char** argv) {
 		esat::DrawClear(0, 0, 0);
 
 		audio.Update(dt);
+		audio.UpdateSpatial2D(player.posX, player.posY);
 
 		UpdateInput();
 
@@ -227,6 +262,8 @@ int esat::main(int argc, char** argv) {
 		} while ((current_time - last_time) <= 1000.0 / fps);
 		esat::WindowFrame();
 	}
+
+	audio.Close();
 	
 	return 0;
 }

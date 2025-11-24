@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <cstring>
+#include <algorithm>
 
 AudioManager::AudioManager()
     : device_(nullptr), context_(nullptr) {
@@ -133,20 +134,6 @@ void AudioManager::Stop(int index) {
 }
 
 
-void AudioManager::Crossfade(int fromIndex, int toIndex, float duration) {
-    if (fromIndex < 0 || fromIndex >= static_cast<int>(sources_.size())) return;
-    if (toIndex < 0 || toIndex >= static_cast<int>(sources_.size())) return;
-
-    fade_.from = fromIndex;
-    fade_.to = toIndex;
-    fade_.duration = duration;
-    fade_.elapsed = 0.0f;
-    fade_.active = true;
-
-    alSourcePlay(sources_[toIndex]);
-}
-
-
 void AudioManager::Update(float deltaTime) {
     if (fade_.active) {
         fade_.elapsed += deltaTime;
@@ -161,17 +148,21 @@ void AudioManager::Update(float deltaTime) {
         alSourcef(sources_[fade_.from], AL_GAIN, gainFrom);
         alSourcef(sources_[fade_.to], AL_GAIN, gainTo);
     }
-
-    for (auto src : sources_) {
-        ALint state;
-        alGetSourcei(src, AL_SOURCE_STATE, &state);
-        if (state == AL_STOPPED) {
-            alSourceRewind(src);
-            alSourcePlay(src);
-        }
-    }
 }
 
+
+void AudioManager::Crossfade(int fromIndex, int toIndex, float duration) {
+    if (fromIndex < 0 || fromIndex >= static_cast<int>(sources_.size())) return;
+    if (toIndex < 0 || toIndex >= static_cast<int>(sources_.size())) return;
+
+    fade_.from = fromIndex;
+    fade_.to = toIndex;
+    fade_.duration = duration;
+    fade_.elapsed = 0.0f;
+    fade_.active = true;
+
+    alSourcePlay(sources_[toIndex]);
+}
 
 
 void AudioManager::Close() {
@@ -189,3 +180,51 @@ void AudioManager::Close() {
         device_ = nullptr;
     }
 }
+
+
+void AudioManager::SetVolume(int index, float gain) {
+    if (index < 0 || index >= sources_.size()) return;
+    alSourcef(sources_[index], AL_GAIN, gain);
+}
+
+
+void AudioManager::Register2DSound(int index, float x, float y, float maxDistance) {
+    spatialSources_.push_back({ index, x, y, maxDistance });
+}
+
+
+void AudioManager::SetSourcePosition(int index, float x, float y) {
+    for (auto& s : spatialSources_) {
+        if (s.sourceIndex == index) {
+            s.x = x;
+            s.y = y;
+            return;
+        }
+    }
+}
+
+
+void AudioManager::UpdateSpatial2D(float listenerX, float listenerY) {
+    float fx = -1.0f;
+    float fy = 0.0f;
+
+    float rightX = 1.0f;
+    float rightY = 0.0f;
+
+    for (auto& s : spatialSources_) {
+
+        float dx = s.x - listenerX;
+        float dy = s.y - listenerY;
+        float distance = std::sqrt(dx * dx + dy * dy);
+
+        float d = std::clamp(1.0f - (distance / s.maxDistance), 0.0f, 1.0f);
+
+        float dotRight = dx * rightX + dy * rightY;
+
+        float panning = std::clamp(dotRight / s.maxDistance, -1.0f, 1.0f);
+
+        alSource3f(sources_[s.sourceIndex], AL_POSITION, panning, 0.0f, 0.0f);
+        alSourcef(sources_[s.sourceIndex], AL_GAIN, d);
+    }
+}
+
