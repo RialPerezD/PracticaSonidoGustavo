@@ -1,0 +1,28 @@
+# Carpetas generadas por Unity (NO SUBIR)
+Audio/[Ll]ibrary/
+Audio/[Tt]emp/
+Audio/[Oo]bj/
+Audio/[Bb]uild/
+Audio/[Bb]uilds/
+Audio/[Ll]ogs/
+Audio/[Uu]ser[Ss]ettings/
+
+# Archivos generados por Visual Studio / IDEs
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
