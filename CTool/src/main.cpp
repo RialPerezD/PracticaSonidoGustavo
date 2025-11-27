@@ -125,10 +125,10 @@ bool CanIMoveThere(int x, int y) {
 
 void CheckSpecialPlaces() {
 	if (player.posX == 25 && player.posY == 28 && outside) {
-		audio.Crossfade(backgroundMusic, tabernMusic, 5.0f);
+		audio.Crossfade(backgroundMusic, tabernMusic, 2.5f);
 		outside = !outside;
 	} else if (player.posX == 25 && player.posY == 30 && !outside) {
-		audio.Crossfade(tabernMusic, backgroundMusic, 5.0f);
+		audio.Crossfade(tabernMusic, backgroundMusic, 2.5f);
 		outside = !outside;
 	}
 }
@@ -206,7 +206,7 @@ void InitBaseMusic() {
 	audio.SetVolume(nightMusic, 0.5f);
 
 	for (int i = 0; i < 4; i++) {
-		int enemyMusicId = audio.LoadWav("../assets/a.wav");
+		int enemyMusicId = audio.LoadWav("../assets/dinoStepMono.wav");
 		audio.Register2DSound(
 			enemyMusicId,
 			enemyPos[i].first,
@@ -220,7 +220,7 @@ void InitBaseMusic() {
 	audio.Register2DSound(bird, 37, 22, 20.f);
 	audio.Play(bird, true);
 
-	//audio.Play(backgroundMusic, true);
+	audio.Play(backgroundMusic, true);
 }
 
 

@@ -16,7 +16,7 @@ if not exist "%BUILD_DIR%" mkdir "%BUILD_DIR%"
 cd /d "%BUILD_DIR%"
 
 :: Ejecutar CMake para generar solución VS2022
-cmake "%PROJECT_DIR%" -G "Visual Studio 17 2022" -A Win32
+cmake "%PROJECT_DIR%" -G "Visual Studio 17 2022"
 
 echo ==============================================
 echo   Solucion generada dentro de /build

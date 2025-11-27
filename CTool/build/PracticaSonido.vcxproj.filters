@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\Clase\PracticaSonidoGustavo\CTool\src\drawable.cpp">
+    <ClCompile Include="C:\Dvd\PracticaSonidoGustavo\CTool\src\drawable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Clase\PracticaSonidoGustavo\CTool\src\main.cpp">
+    <ClCompile Include="C:\Dvd\PracticaSonidoGustavo\CTool\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Clase\PracticaSonidoGustavo\CTool\src\sound.cpp">
+    <ClCompile Include="C:\Dvd\PracticaSonidoGustavo\CTool\src\sound.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Clase\PracticaSonidoGustavo\CTool\CMakeLists.txt" />
+    <CustomBuild Include="C:\Dvd\PracticaSonidoGustavo\CTool\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{9140A35C-68D4-3514-8CF1-ED60BC59EEFC}</UniqueIdentifier>
+      <UniqueIdentifier>{181FF2F3-C6C7-3B17-B362-5F467691F6C1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

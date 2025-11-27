@@ -1,15 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\build\\",
+  "WorkspaceRootPath": "C:\\Dvd\\PracticaSonidoGustavo\\CTool\\build\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D52CE665-C615-31EF-BE34-B86ADE672D88}|PracticaSonido.vcxproj|D:\\Clase\\PracticaSonidoGustavo\\CTool\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52CE665-C615-31EF-BE34-B86ADE672D88}|PracticaSonido.vcxproj|D:\\Clase\\PracticaSonidoGustavo\\CTool\\src\\sound.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D52CE665-C615-31EF-BE34-B86ADE672D88}|PracticaSonido.vcxproj|D:\\CLASE\\PRACTICASONIDOGUSTAVO\\CTOOL\\INCLUDE\\SOUND.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B611CCB9-AF72-30CE-BD4D-41FEA30BBEB9}|PracticaSonido.vcxproj|C:\\Dvd\\PracticaSonidoGustavo\\CTool\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,52 +12,20 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 223,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "sound.cpp",
-              "DocumentMoniker": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\src\\sound.cpp",
-              "RelativeDocumentMoniker": "..\\src\\sound.cpp",
-              "ToolTip": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\src\\sound.cpp",
-              "RelativeToolTip": "..\\src\\sound.cpp",
-              "ViewState": "AgIAAMYAAAAAAAAAAAAEwOUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-24T10:20:54.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\src\\main.cpp",
-              "RelativeDocumentMoniker": "..\\src\\main.cpp",
-              "ToolTip": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\src\\main.cpp",
-              "RelativeToolTip": "..\\src\\main.cpp",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAAAN4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-11-23T22:44:18.932Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 177,
+          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "sound.h",
-              "DocumentMoniker": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\include\\sound.h",
-              "RelativeDocumentMoniker": "..\\include\\sound.h",
-              "ToolTip": "D:\\Clase\\PracticaSonidoGustavo\\CTool\\include\\sound.h",
-              "RelativeToolTip": "..\\include\\sound.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-11-23T23:31:38.225Z",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Dvd\\PracticaSonidoGustavo\\CTool\\src\\main.cpp",
+              "RelativeDocumentMoniker": "..\\src\\main.cpp",
+              "ToolTip": "C:\\Dvd\\PracticaSonidoGustavo\\CTool\\src\\main.cpp",
+              "RelativeToolTip": "..\\src\\main.cpp",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAAAPcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-27T16:14:29.362Z",
               "EditorCaption": ""
             }
           ]

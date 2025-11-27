@@ -41,8 +41,8 @@ set_target_properties(PracticaSonido PROPERTIES
 #   Librerías externas
 # -------------------------------
 target_link_libraries(PracticaSonido
-    ${PROJECT_SOURCE_DIR}/deps/ESAT_rev248/bin/ESAT_d.lib
-    ${PROJECT_SOURCE_DIR}/deps/OpenAL/libs/Win32/OpenAL32.lib
+    ${PROJECT_SOURCE_DIR}/deps/ESAT_rev248/bin/win_x64/ESAT_d.lib
+    ${PROJECT_SOURCE_DIR}/deps/OpenAL/libs/Win64/OpenAL32.lib
     opengl32.lib
     user32.lib
     gdi32.lib
@@ -62,6 +62,13 @@ endif()
 # -------------------------------
 set_target_properties(PracticaSonido PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/build
+)
+
+# Copiar la DLL junto al ejecutable
+add_custom_command(TARGET PracticaSonido POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+        "${PROJECT_SOURCE_DIR}/OpenAl32.dll"
+        "$<TARGET_FILE_DIR:PracticaSonido>"
 )
 
 # -------------------------------

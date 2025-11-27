@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Clase\PracticaSonidoGustavo\CTool\build\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Dvd\PracticaSonidoGustavo\CTool\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Clase\PracticaSonidoGustavo\CTool\build\Debug\PracticaSonido.exe</FullPath>
+      <FullPath>C:\Dvd\PracticaSonidoGustavo\CTool\build\Debug\PracticaSonido.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,2 +1,38 @@
 ﻿  main.cpp
-  PracticaSonido.vcxproj -> D:\Clase\PracticaSonidoGustavo\CTool\build\Debug\PracticaSonido.exe
+ESAT_d.lib(window.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(window.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(draw.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(draw.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(input.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(input.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(time.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(time.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(glew.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(glew.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(init.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(init.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(window.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(window.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(input.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(input.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(context.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(context.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(edk_gpumanager.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(edk_gpumanager.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(imgui.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(imgui.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(imgui.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(imgui.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(math.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(math.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(nanovg.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(nanovg.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(win32_time.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(win32_time.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(win32_thread.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(win32_thread.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(platform.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(platform.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(monitor.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(monitor.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(vulkan.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(vulkan.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(edk_gpuresources.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(edk_gpuresources.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(imgui_draw.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(imgui_draw.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(imgui_widgets.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(imgui_widgets.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(imgui_tables.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(imgui_tables.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(win32_init.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(win32_init.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(null_init.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(null_init.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(win32_module.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(win32_module.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(edk_geometry.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(edk_geometry.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(win32_window.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(win32_window.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(win32_monitor.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(win32_monitor.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(win32_joystick.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(win32_joystick.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(wgl_context.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(wgl_context.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(egl_context.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(egl_context.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(null_monitor.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(null_monitor.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(null_window.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(null_window.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(null_joystick.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(null_joystick.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+ESAT_d.lib(osmesa_context.obj) : warning LNK4099: no se encontró PDB '' con 'ESAT_d.lib(osmesa_context.obj)' o en ''; se vinculará el objeto sin tener en cuenta información de depuración
+  PracticaSonido.vcxproj -> C:\Dvd\PracticaSonidoGustavo\CTool\build\Debug\PracticaSonido.exe
