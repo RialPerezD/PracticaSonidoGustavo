@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../Audios_Unity/PruebaCrossfade2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638995304796489610
+  lastModified: 638997646226930646
   FileSizes:
   - Name: Desktop
     Value: 9576992
@@ -59,7 +59,7 @@ MonoBehaviour:
   Path: ../Audios_Unity/PruebaCrossfade2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638995304796499617
+  lastModified: 638997646226975955
   FileSizes:
   - Name: Desktop
     Value: 866
@@ -108,6 +108,50 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-3427330643398262819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MusicManager/Mezcla
+  m_EditorClassIdentifier: 
+  Name: Mezcla
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1542291889
+    data2: 1589283805
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1873724389472553387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../Fmod/PruebaCrossfade2/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638997646226930646
+  FileSizes:
+  - Name: Desktop
+    Value: 9576992
+  Exists: 1
 --- !u!114 &-37615256578567327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,23 +193,51 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -7861356039526491199}
-  - {fileID: -9188600306330243927}
+  - {fileID: 1825952429132610040}
+  - {fileID: -1873724389472553387}
   EditorEvents:
-  - {fileID: 3040393096037235069}
-  - {fileID: -37615256578567327}
+  - {fileID: 269602792570429276}
+  - {fileID: 3165514496814230398}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -9188600306330243927}
+  - {fileID: -1873724389472553387}
   StringsBanks:
-  - {fileID: -7861356039526491199}
+  - {fileID: 1825952429132610040}
   cacheVersion: 131857
-  cacheTime: 638995304796499617
+  cacheTime: 638997646226975955
   SerializableEventsDict:
   - key: event:/MusicManager
     index: 0
   - key: event:/Musica
     index: 1
+--- !u!114 &269602792570429276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicManager
+  m_EditorClassIdentifier: 
+  Path: event:/MusicManager
+  Guid:
+    Data1: 711178784
+    Data2: 1104079771
+    Data3: 1682001317
+    Data4: -1991271629
+  Banks:
+  - {fileID: -1873724389472553387}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3427330643398262819}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &352087688651893560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,6 +338,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 9576992
   Exists: 1
+--- !u!114 &1825952429132610040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../Fmod/PruebaCrossfade2/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638997646226975955
+  FileSizes:
+  - Name: Desktop
+    Value: 866
+  Exists: 1
 --- !u!114 &2426981056767344061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +413,58 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3165514496814230398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Musica
+  m_EditorClassIdentifier: 
+  Path: event:/Musica
+  Guid:
+    Data1: -948081944
+    Data2: 1168352372
+    Data3: 433874830
+    Data4: -1318184616
+  Banks:
+  - {fileID: -1873724389472553387}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 3256478512748023800}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 302544
+--- !u!114 &3256478512748023800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Musica/Mezcla
+  m_EditorClassIdentifier: 
+  Name: Mezcla
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1542291889
+    data2: 1589283805
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &3333781404120752504
 MonoBehaviour:
   m_ObjectHideFlags: 0

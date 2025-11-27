@@ -1,13 +1,13 @@
-# Carpetas generadas por Unity (NO SUBIR)
-Audio/[Ll]ibrary/
-Audio/[Tt]emp/
-Audio/[Oo]bj/
-Audio/[Bb]uild/
-Audio/[Bb]uilds/
-Audio/[Ll]ogs/
-Audio/[Uu]ser[Ss]ettings/
+# Unity auto-generated folders
+Unity/Audio/[Ll]ibrary/
+Unity/Audio/[Tt]emp/
+Unity/Audio/[Oo]bj/
+Unity/Audio/[Bb]uild/
+Unity/Audio/[Bb]uilds/
+Unity/Audio/[Ll]ogs/
+Unity/Audio/[Uu]ser[Ss]ettings/
 
-# Archivos generados por Visual Studio / IDEs
+# Visual Studio files
 .vs/
 *.csproj
 *.unityproj
@@ -23,6 +23,18 @@ Audio/[Uu]ser[Ss]ettings/
 *.opendb
 *.VC.db
 
-# Archivos de sistema
+# System files
 .DS_Store
 Thumbs.db
+
+# Ignore the Cache folder since it is updated locally.
+Unity/Audio/[Aa]ssets/Plugins/FMOD/Cache/*
+
+# Ignore bank files in the StreamingAssets folder.
+# They are compiled audio data platform-specific.
+Unity/FmodProject/**/[Aa]ssets/StreamingAssets/**/*.bank
+Unity/FmodProject/**/[Aa]ssets/StreamingAssets/**/*.bank.meta
+
+# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
+# Log files can be ignored.
+Unity/Audio/**/fmod_editor.log
