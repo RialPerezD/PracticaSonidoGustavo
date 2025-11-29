@@ -2,6 +2,8 @@
 CGame/build/
 CTool/build/
 
+# Rider .idea folder
+Unity/Audio/.idea/
 
 # Unity auto-generated folders
 Unity/Audio/[Ll]ibrary/
@@ -31,6 +33,10 @@ Unity/Audio/[Uu]ser[Ss]ettings/
 # System files
 .DS_Store
 Thumbs.db
+
+# FMOD project temporary files
+Unity/FmodProject/Master/.cache/
+Unity/FmodProject/Master/.user/
 
 # Ignore the Cache folder since it is updated locally.
 Unity/Audio/[Aa]ssets/Plugins/FMOD/Cache/*

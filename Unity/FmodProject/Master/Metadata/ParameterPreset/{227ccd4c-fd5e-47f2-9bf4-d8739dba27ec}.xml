@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{227ccd4c-fd5e-47f2-9bf4-d8739dba27ec}">
 		<property name="name">
-			<value>Crossfade</value>
+			<value>Blend</value>
 		</property>
 		<relationship name="folder">
 			<destination>{56a6c60a-199f-4758-a053-a521835a12de}</destination>

@@ -4,61 +4,56 @@ using FMOD.Studio;
 
 public class MusicCrossFader : MonoBehaviour
 {
-    [Header("Configuración FMOD")]
-    public EventReference eventoMusica; // Arrastra aquí tu evento "MusicManager"
+    private const string BlendParameter = "Blend";
 
-    [Header("Control de Mezcla")]
-    [Range(0f, 1f)]
-    public float intensidadMezcla = 0f; // 0 = Canción A, 1 = Canción B
+    [Header("FMOD")] public EventReference musicEvent;
 
-    [Tooltip("Qué tan rápido ocurre la transición")]
-    public float velocidadTransicion = 2.0f;
+    [Header("Fade blend")] [Range(0f, 1f)] public float targetBlend = 0f; // 0 = Song A, 1 = Song B
 
-    private EventInstance instanciaMusica;
-    private float valorActual = 0f;
+    [Tooltip("How fast the fade's blend goes")]
+    public float transitionSpeed = 2.0f;
 
-    void Start()
+    public void SwapToA()
     {
-        // 1. Crear e iniciar la instancia de música
-        instanciaMusica = RuntimeManager.CreateInstance(eventoMusica);
-        instanciaMusica.start();
-
-        // Inicializamos el parámetro en 0
-        instanciaMusica.setParameterByName("Mezcla", 0f);
+        targetBlend = 0f;
     }
 
-    void Update()
+    public void SwapToB()
     {
-        // 2. Suavizado matemático (Lerp)
-        // Esto hace que si cambias intensidadMezcla bruscamente, el audio cambie suavemente
-        if (Mathf.Abs(valorActual - intensidadMezcla) > 0.001f)
-        {
-            valorActual = Mathf.MoveTowards(valorActual, intensidadMezcla, velocidadTransicion * Time.deltaTime);
+        targetBlend = 1f;
+    }
 
-            // 3. Enviar el valor a FMOD
-            instanciaMusica.setParameterByName("Mezcla", valorActual);
+    private EventInstance musicInstance;
+    private float currentBlend = 0.0f; // 0 = Song A, 1 = Song B
+
+    private void Start()
+    {
+        // Create and initialize music's instance
+        musicInstance = RuntimeManager.CreateInstance(musicEvent);
+        musicInstance.start();
+
+        // Initialize blend parameter to 0 (Song A)
+        musicInstance.setParameterByName(BlendParameter, 0f);
+    }
+
+    private void Update()
+    {
+        // Lerp blend
+        if (Mathf.Abs(currentBlend - targetBlend) > 0.001f)
+        {
+            currentBlend = Mathf.MoveTowards(currentBlend, targetBlend, transitionSpeed * Time.deltaTime);
+
+            // Set FMOD parameter
+            musicInstance.setParameterByName(BlendParameter, currentBlend);
         }
 
-        // --- PRUEBA RÁPIDA (TECLAS) ---
-        if (Input.GetKeyDown(KeyCode.A)) CambiarACancionA();
-        if (Input.GetKeyDown(KeyCode.B)) CambiarACancionB();
+        if (Input.GetKeyDown(KeyCode.A)) SwapToA();
+        if (Input.GetKeyDown(KeyCode.B)) SwapToB();
     }
 
-    // Métodos públicos para llamar desde otros scripts o eventos de UI
-    public void CambiarACancionA()
+    private void OnDestroy()
     {
-        intensidadMezcla = 0f;
-    }
-
-    public void CambiarACancionB()
-    {
-        intensidadMezcla = 1f;
-    }
-
-    // Limpieza de memoria
-    void OnDestroy()
-    {
-        instanciaMusica.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        instanciaMusica.release();
+        musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        musicInstance.release();
     }
 }
