@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{661d8aca-00fd-46b4-8855-8fbcf4536886}">
 		<property name="name">
-			<value>TestCrossfade</value>
+			<value>Crossfade</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

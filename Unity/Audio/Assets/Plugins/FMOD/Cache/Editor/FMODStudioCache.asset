@@ -84,6 +84,34 @@ MonoBehaviour:
   - Name: Desktop
     Value: 866
   Exists: 1
+--- !u!114 &-5112225449538666179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crossfade
+  m_EditorClassIdentifier: 
+  Path: event:/Crossfade
+  Guid:
+    Data1: 1713212106
+    Data2: 1186201853
+    Data3: -1131457144
+    Data4: -2039983116
+  Banks:
+  - {fileID: 4873049853332795195}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -891807665324659424}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4018140202346215778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +180,57 @@ MonoBehaviour:
   - Name: Desktop
     Value: 9576992
   Exists: 1
---- !u!114 &-537917033632409026
+--- !u!114 &-1206982968729462525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Branching/State
+  m_EditorClassIdentifier: 
+  Name: State
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 303599099
+    data2: 3282050473
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Exploration
+  - Combat
+  Exists: 1
+--- !u!114 &-891807665324659424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Crossfade/Blend
+  m_EditorClassIdentifier: 
+  Name: Blend
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1857729485
+    data2: 259607653
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-70637918912760239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,24 +240,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/TestCrossfade
+  m_Name: event:/Branching
   m_EditorClassIdentifier: 
-  Path: event:/TestCrossfade
+  Path: event:/Branching
   Guid:
-    Data1: 1713212106
-    Data2: 1186201853
-    Data3: -1131457144
-    Data4: -2039983116
+    Data1: 1369712002
+    Data2: 1255461636
+    Data3: 679771047
+    Data4: -1676941144
   Banks:
   - {fileID: 4873049853332795195}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 4573321885753660400}
+  - {fileID: -1206982968729462525}
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 323159
 --- !u!114 &-37615256578567327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,17 +302,20 @@ MonoBehaviour:
   - {fileID: 218057970841314867}
   - {fileID: 4873049853332795195}
   EditorEvents:
-  - {fileID: -537917033632409026}
+  - {fileID: -5112225449538666179}
+  - {fileID: -70637918912760239}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4873049853332795195}
   StringsBanks:
   - {fileID: 218057970841314867}
   cacheVersion: 131857
-  cacheTime: 639000306348810225
+  cacheTime: 639000389316807962
   SerializableEventsDict:
-  - key: event:/TestCrossfade
+  - key: event:/Crossfade
     index: 0
+  - key: event:/Branching
+    index: 1
 --- !u!114 &218057970841314867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,10 +331,10 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639000306348810225
+  lastModified: 639000389316807962
   FileSizes:
   - Name: 
-    Value: 822
+    Value: 918
   Exists: 1
 --- !u!114 &269602792570429276
 MonoBehaviour:
@@ -534,30 +615,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &4573321885753660400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/TestCrossfade/Blend
-  m_EditorClassIdentifier: 
-  Name: Blend
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1857729485
-    data2: 259607653
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &4779416209222975920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,7 +654,7 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639000306348784970
+  lastModified: 639000389316752761
   FileSizes: []
   Exists: 1
 --- !u!114 &5622253740206327820
