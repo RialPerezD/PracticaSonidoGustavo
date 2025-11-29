@@ -1,6 +1,0 @@
-D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/imgui_internal.dir
-D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/imgui_backends.dir
-D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/imnodes_internal.dir
-D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/Tool.dir
-D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/ALL_BUILD.dir
-D:/Clase/PracticaSonidoGustavo/CTool/build/CMakeFiles/ZERO_CHECK.dir

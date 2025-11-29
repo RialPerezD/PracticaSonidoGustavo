@@ -1,3 +1,0 @@
-D:/Clase/PracticaSonidoGustavo/CGame/build/CMakeFiles/Game.dir
-D:/Clase/PracticaSonidoGustavo/CGame/build/CMakeFiles/ALL_BUILD.dir
-D:/Clase/PracticaSonidoGustavo/CGame/build/CMakeFiles/ZERO_CHECK.dir

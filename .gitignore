@@ -1,3 +1,8 @@
+# C project build directories
+CGame/build/
+CTool/build/
+
+
 # Unity auto-generated folders
 Unity/Audio/[Ll]ibrary/
 Unity/Audio/[Tt]emp/

@@ -1,8 +1,0 @@
-﻿  Building Custom Rule D:/Clase/PracticaSonidoGustavo/CTool/CMakeLists.txt
-  imgui.cpp
-  imgui_demo.cpp
-  imgui_draw.cpp
-  imgui_tables.cpp
-  imgui_widgets.cpp
-  Generating Code...
-  imgui_internal.vcxproj -> D:\Clase\PracticaSonidoGustavo\CTool\build\Debug\imgui_internal.lib
