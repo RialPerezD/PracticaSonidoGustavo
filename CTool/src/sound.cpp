@@ -188,6 +188,16 @@ void AudioManager::SetVolume(int index, float gain) {
 }
 
 
+bool AudioManager::IsPlaying(int index) {
+    if (index < 0 || index >= static_cast<int>(sources_.size())) return false;
+
+    ALint state;
+    alGetSourcei(sources_[index], AL_SOURCE_STATE, &state);
+
+    return state == AL_PLAYING;
+}
+
+
 void AudioManager::Register2DSound(int index, float x, float y, float maxDistance) {
     spatialSources_.push_back({ index, x, y, maxDistance });
 }

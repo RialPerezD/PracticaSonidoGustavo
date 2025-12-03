@@ -16,6 +16,7 @@ public:
     void Stop(int index);
     void Close();
     void SetVolume(int index, float gain);
+    bool IsPlaying(int index);
 
     void Update(float deltaTime);
     void Crossfade(int fromIndex, int toIndex, float duration);
