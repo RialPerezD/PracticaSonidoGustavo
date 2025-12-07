@@ -279,6 +279,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-126461622670102843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AmbienceFireCracking
+  m_EditorClassIdentifier: 
+  Path: event:/AmbienceFireCracking
+  Guid:
+    Data1: -674020240
+    Data2: 1215507544
+    Data3: 1718417793
+    Data4: 1296833843
+  Banks:
+  - {fileID: 4873049853332795195}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5224754766090365184}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 56000
 --- !u!114 &-46423437544664877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,13 +381,15 @@ MonoBehaviour:
   - {fileID: 7357830736956103655}
   - {fileID: -7729856508191743569}
   - {fileID: 8638596159068257937}
+  - {fileID: 2137334262044303271}
+  - {fileID: -126461622670102843}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4873049853332795195}
   StringsBanks:
   - {fileID: 218057970841314867}
   cacheVersion: 131857
-  cacheTime: 639006684138122024
+  cacheTime: 639007213369340866
   SerializableEventsDict:
   - key: event:/CrossFade
     index: 0
@@ -373,6 +403,10 @@ MonoBehaviour:
     index: 4
   - key: event:/CrossFadeScene
     index: 5
+  - key: event:/OneShot
+    index: 6
+  - key: event:/AmbienceFireCracking
+    index: 7
 --- !u!114 &218057970841314867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,10 +422,10 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639006684138122024
+  lastModified: 639007213369340866
   FileSizes:
   - Name: 
-    Value: 1522
+    Value: 1662
   Exists: 1
 --- !u!114 &269602792570429276
 MonoBehaviour:
@@ -572,6 +606,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 866
   Exists: 1
+--- !u!114 &2137334262044303271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OneShot
+  m_EditorClassIdentifier: 
+  Path: event:/OneShot
+  Guid:
+    Data1: -772256226
+    Data2: 1123862710
+    Data3: 537105585
+    Data4: 1663051711
+  Banks:
+  - {fileID: 4873049853332795195}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 9188
 --- !u!114 &2426981056767344061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -816,8 +877,32 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639006684138106976
+  lastModified: 639007213369295657
   FileSizes: []
+  Exists: 1
+--- !u!114 &5224754766090365184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AmbienceFireCracking/MODE
+  m_EditorClassIdentifier: 
+  Name: MODE
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 431612271
+    data2: 2808377618
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &5525915197586940581
 MonoBehaviour:
