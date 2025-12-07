@@ -1637,6 +1637,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   sensitivity: 200
+  jumpHeight: 3
+  gravity: -9.81
   camera: {fileID: 923615589}
   sound:
     Guid:
