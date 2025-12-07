@@ -1,10 +1,11 @@
 using FMODUnity;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    [Header("Configuración Movimiento")]
+    [Header("Configuraciï¿½n Movimiento")]
     public float speed = 5f;
     public float sensitivity = 200f;
     public float jumpHeight = 1.5f;
@@ -13,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [Header("Referencias")]
     public new Transform camera;
 
-    [Header("Configuración FMOD")]
+    [Header("Configuraciï¿½n FMOD")]
     public EventReference sound;
     public float interval = 0.5f;
 
@@ -24,11 +25,14 @@ public class PlayerController : MonoBehaviour
     private Vector3 _velocity;
     private float _groundedTimer; 
 
+    private Vector3 _initialPosition;
+    
     void Start()
     {
         _controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        _initialPosition = transform.position;
     }
 
     private void Update()
@@ -107,6 +111,17 @@ public class PlayerController : MonoBehaviour
         if (!sound.IsNull)
         {
             RuntimeManager.PlayOneShot(sound, transform.position);
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("KillZone"))
+        {
+            _controller.enabled = false; 
+            transform.position = _initialPosition;
+            _controller.enabled = true;
+            Debug.LogWarning("Player has been reset to the initial position.");
         }
     }
 }
