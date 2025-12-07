@@ -34,4 +34,9 @@ public class EpicTrigger : MonoBehaviour
         _musicInstance.setParameterByNameWithLabel(StateParameter, StateSad);
         RuntimeManager.StudioSystem.setParameterByName(globalParamName, 0.0f);
     }
+
+    public void SetVolume(float volume)
+    {
+        _musicInstance.setVolume(volume);
+    }
 }

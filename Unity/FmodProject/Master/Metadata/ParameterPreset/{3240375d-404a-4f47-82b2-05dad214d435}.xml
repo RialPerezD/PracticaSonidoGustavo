@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{3240375d-404a-4f47-82b2-05dad214d435}">
+		<property name="name">
+			<value>Mezcla</value>
+		</property>
+		<relationship name="folder">
+			<destination>{56a6c60a-199f-4758-a053-a521835a12de}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{bda1401d-f2cf-4910-8044-a14d3738dd17}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{bda1401d-f2cf-4910-8044-a14d3738dd17}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -1638,6 +1638,14 @@ MonoBehaviour:
   speed: 2
   sensitivity: 200
   camera: {fileID: 923615589}
+  sound:
+    Guid:
+      Data1: -2121567672
+      Data2: 1203432609
+      Data3: -348385128
+      Data4: 1940979556
+    Path: event:/sfx_footsteps
+  interval: 0.75
 --- !u!143 &135793942
 CharacterController:
   m_ObjectHideFlags: 0
@@ -7437,6 +7445,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 436916, guid: 287711fb95cdc004b814e53a055b4b1e, type: 3}
   m_PrefabInstance: {fileID: 610809364}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &567582642 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3813085799614485795, guid: bc486d0c850b44a4aa151426f9701fe1, type: 3}
+  m_PrefabInstance: {fileID: 5613925601123770614}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f67463132d205c4193b05690e423601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &570752107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 443522, guid: e2815925c4988c3438817c46d19d1b3f, type: 3}
@@ -20443,6 +20462,82 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cf375f9208bd17468242e6d1c3cc819, type: 3}
+--- !u!1 &1513735141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1513735144}
+  - component: {fileID: 1513735143}
+  - component: {fileID: 1513735142}
+  m_Layer: 0
+  m_Name: CrossfadeZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1513735142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513735141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca22432f3264a14989d04ce978ef4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicEvent:
+    Guid:
+      Data1: -447567538
+      Data2: 1190838776
+      Data3: 1907840191
+      Data4: 678854582
+    Path: event:/CrossFadeScene
+  targetBlend: 0
+  transitionSpeed: 1
+  epicTriggerScript: {fileID: 567582642}
+--- !u!65 &1513735143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513735141}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1513735144
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513735141}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.27, y: 11.31, z: 32.7}
+  m_LocalScale: {x: 8.1022005, y: 3.3344, z: 5.0028}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1514318827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e5da93bf3ff477c4f8f88f51e419c805, type: 3}
@@ -29525,3 +29620,4 @@ SceneRoots:
   - {fileID: 135793940}
   - {fileID: 5613925601123770614}
   - {fileID: 1964982058}
+  - {fileID: 1513735144}

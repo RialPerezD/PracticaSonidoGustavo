@@ -64,6 +64,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 866
   Exists: 1
+--- !u!114 &-7729856508191743569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx_footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/sfx_footsteps
+  Guid:
+    Data1: -2121567672
+    Data2: 1203432609
+    Data3: -348385128
+    Data4: 1940979556
+  Banks:
+  - {fileID: 4873049853332795195}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6047047749104372957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,9 +145,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Crossfade
+  m_Name: event:/CrossFade
   m_EditorClassIdentifier: 
-  Path: event:/Crossfade
+  Path: event:/CrossFade
   Guid:
     Data1: 1713212106
     Data2: 1186201853
@@ -130,7 +157,7 @@ MonoBehaviour:
   - {fileID: 4873049853332795195}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters:
   - {fileID: -891807665324659424}
   MinDistance: 1
@@ -238,7 +265,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Crossfade/Blend
+  m_Name: parameter:/CrossFade/Blend
   m_EditorClassIdentifier: 
   Name: Blend
   StudioPath: 
@@ -324,15 +351,17 @@ MonoBehaviour:
   - {fileID: 1661306233556839176}
   - {fileID: 5525915197586940581}
   - {fileID: 7357830736956103655}
+  - {fileID: -7729856508191743569}
+  - {fileID: 8638596159068257937}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4873049853332795195}
   StringsBanks:
   - {fileID: 218057970841314867}
   cacheVersion: 131857
-  cacheTime: 639006636709580013
+  cacheTime: 639006684138122024
   SerializableEventsDict:
-  - key: event:/Crossfade
+  - key: event:/CrossFade
     index: 0
   - key: event:/Layering
     index: 1
@@ -340,6 +369,10 @@ MonoBehaviour:
     index: 2
   - key: event:/AmbienceLayering
     index: 3
+  - key: event:/sfx_footsteps
+    index: 4
+  - key: event:/CrossFadeScene
+    index: 5
 --- !u!114 &218057970841314867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,10 +388,10 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639006636709580013
+  lastModified: 639006684138122024
   FileSizes:
   - Name: 
-    Value: 1394
+    Value: 1522
   Exists: 1
 --- !u!114 &269602792570429276
 MonoBehaviour:
@@ -783,7 +816,7 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639006636709554887
+  lastModified: 639006684138106976
   FileSizes: []
   Exists: 1
 --- !u!114 &5525915197586940581
@@ -933,6 +966,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &8094719491689169203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/CrossFadeScene/Mezcla
+  m_EditorClassIdentifier: 
+  Name: Mezcla
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2911903605
+    data2: 3785677072
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &8343054114039404729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -985,3 +1042,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 302544
+--- !u!114 &8638596159068257937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CrossFadeScene
+  m_EditorClassIdentifier: 
+  Path: event:/CrossFadeScene
+  Guid:
+    Data1: -447567538
+    Data2: 1190838776
+    Data3: 1907840191
+    Data4: 678854582
+  Banks:
+  - {fileID: 4873049853332795195}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8094719491689169203}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 232515
