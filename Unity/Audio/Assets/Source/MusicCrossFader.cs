@@ -14,10 +14,10 @@ public class MusicCrossFader : MonoBehaviour
     [Range(0f, 1f)]
     public float targetBlend = 0f;
 
-    [Tooltip("Velocidad de la transición")]
+    [Tooltip("Transition Speed")]
     public float transitionSpeed = 1.0f;
 
-    [Header("Referencias")]
+    [Header("References")]
     public EpicTrigger epicTriggerScript;
 
     private EventInstance musicInstance;
@@ -46,7 +46,7 @@ public class MusicCrossFader : MonoBehaviour
 
             musicInstance.setVolume(currentBlend);
 
-            if (epicTriggerScript != null)
+            if (epicTriggerScript)
             {
                 epicTriggerScript.SetVolume(1f - currentBlend);
             }

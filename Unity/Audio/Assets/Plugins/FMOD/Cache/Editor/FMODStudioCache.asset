@@ -389,7 +389,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 218057970841314867}
   cacheVersion: 131857
-  cacheTime: 639007213369340866
+  cacheTime: 639009128542935252
   SerializableEventsDict:
   - key: event:/CrossFade
     index: 0
@@ -422,7 +422,7 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639007213369340866
+  lastModified: 639009128542935252
   FileSizes:
   - Name: 
     Value: 1662
@@ -877,7 +877,7 @@ MonoBehaviour:
   Path: Assets/AudioBanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639007213369295657
+  lastModified: 639009128542895215
   FileSizes: []
   Exists: 1
 --- !u!114 &5224754766090365184

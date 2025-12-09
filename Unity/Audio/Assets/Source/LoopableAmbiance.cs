@@ -11,16 +11,10 @@ public class LoopableAmbiance : MonoBehaviour
 
     private bool _isPlaying = false;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _soundInstance = RuntimeManager.CreateInstance(soundEvent);
         StartAmbiance(gameObject.transform, gameObject.transform.position);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 
     public void StartAmbiance(Transform source, Vector3 worldPos)
@@ -29,7 +23,7 @@ public class LoopableAmbiance : MonoBehaviour
 
         if (source)
         {
-            RuntimeManager.AttachInstanceToGameObject(_soundInstance, source, source.GetComponent<Rigidbody>());
+            RuntimeManager.AttachInstanceToGameObject(_soundInstance, source.gameObject, source.GetComponent<Rigidbody>());
         }
         else
         {

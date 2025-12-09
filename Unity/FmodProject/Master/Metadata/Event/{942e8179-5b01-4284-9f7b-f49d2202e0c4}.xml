@@ -211,7 +211,7 @@
 			<value>-2.5</value>
 		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>SadAndEpic</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{c115aa95-1d11-4afb-b7bf-a4dfc88825c3}</destination>

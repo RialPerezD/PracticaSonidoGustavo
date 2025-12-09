@@ -130,7 +130,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{3b52f07a-87b1-4245-a1cd-dcb8e39187b0}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Blend_0</value>
 		</property>
 		<relationship name="automators">
 			<destination>{47b2f2f3-fb12-4007-b1c9-81771726393f}</destination>
@@ -160,7 +160,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{d5ea6f6c-51c4-4168-bd24-e793f8f7cb6d}">
 		<property name="name">
-			<value>Audio 2</value>
+			<value>Blend_1</value>
 		</property>
 		<relationship name="automators">
 			<destination>{3f82ea29-d8a9-4428-9ecd-58a4ae53af8c}</destination>

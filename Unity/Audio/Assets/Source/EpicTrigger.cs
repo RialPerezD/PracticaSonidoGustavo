@@ -20,6 +20,12 @@ public class EpicTrigger : MonoBehaviour
         _musicInstance = RuntimeManager.CreateInstance(musicEvent);
         _musicInstance.start();
     }
+    
+    private void OnDestroy()
+    {
+        _musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        _musicInstance.release();
+    }
 
     private void OnTriggerEnter(Collider other)
     {

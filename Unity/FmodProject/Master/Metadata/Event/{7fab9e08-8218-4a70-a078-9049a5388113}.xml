@@ -181,7 +181,7 @@
 			<value>2</value>
 		</property>
 		<property name="name">
-			<value>Audio 4</value>
+			<value>BrownNoise</value>
 		</property>
 		<relationship name="automators">
 			<destination>{78214fa0-6200-452c-9181-b1ff2527c139}</destination>
@@ -217,7 +217,7 @@
 			<value>0.5</value>
 		</property>
 		<property name="name">
-			<value>Audio 2</value>
+			<value>Waves</value>
 		</property>
 		<relationship name="automators">
 			<destination>{2169daf4-7423-41c3-9f9b-cabf9b586762}</destination>
@@ -247,7 +247,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{7a8ecca1-de96-4ce6-9167-be767af7dd2b}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>CutDownWindHowling</value>
 		</property>
 		<relationship name="automators">
 			<destination>{4e266289-c7f2-4b6d-836b-5ad7845e964d}</destination>

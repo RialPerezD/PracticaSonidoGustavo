@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{d7d34470-2c58-4873-81f9-6c66331d4c4d}">
-		<property name="note" />
 		<property name="name">
 			<value>AmbienceFireCracking</value>
 		</property>
@@ -131,7 +130,7 @@
 			<value>4</value>
 		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>FireCrackling</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{9ffaa883-0ac1-4472-97b3-01a4714b7d10}</destination>
