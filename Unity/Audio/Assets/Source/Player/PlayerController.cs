@@ -5,16 +5,16 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
 {
-    [Header("Configuraci�n Movimiento")]
+    [Header("Movement Configuration")]
     public float speed = 5f;
     public float sensitivity = 200f;
     public float jumpHeight = 1.5f;
     public float gravity = -9.81f;
 
-    [Header("Referencias")]
+    [Header("References")]
     public new Transform camera;
 
-    [Header("Configuraci�n FMOD")]
+    [Header("FMOD Configuration")]
     public EventReference sound;
     public float interval = 0.5f;
 
@@ -23,10 +23,10 @@ public class PlayerController : MonoBehaviour
     private float timerfootsteps = 0f;
 
     private Vector3 _velocity;
-    private float _groundedTimer; 
+    private float _groundedTimer;
 
     private Vector3 _initialPosition;
-    
+
     void Start()
     {
         _controller = GetComponent<CharacterController>();
@@ -39,6 +39,9 @@ public class PlayerController : MonoBehaviour
     {
         HandleLook();
         HandleMovement();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
     }
 
     void HandleLook()
@@ -57,7 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         if (_controller.isGrounded)
         {
-            _groundedTimer = 0.2f; 
+            _groundedTimer = 0.2f;
 
             if (_velocity.y < 0)
             {
@@ -113,12 +116,12 @@ public class PlayerController : MonoBehaviour
             RuntimeManager.PlayOneShot(sound, transform.position);
         }
     }
-    
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("KillZone"))
         {
-            _controller.enabled = false; 
+            _controller.enabled = false;
             transform.position = _initialPosition;
             _controller.enabled = true;
             Debug.LogWarning("Player has been reset to the initial position.");

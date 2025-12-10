@@ -20601,6 +20601,7 @@ MonoBehaviour:
   targetBlend: 0
   transitionSpeed: 1
   epicTriggerScript: {fileID: 567582642}
+  layererScript: {fileID: 1964982057}
 --- !u!65 &1513735143
 BoxCollider:
   m_ObjectHideFlags: 0

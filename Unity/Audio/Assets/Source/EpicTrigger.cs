@@ -5,12 +5,18 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 public class EpicTrigger : MonoBehaviour
 {
-    [Header("FMOD")] public EventReference musicEvent;
+    [Header("FMOD")]
+    public EventReference musicEvent;
 
-    [Header("FMOD Settings")]
+    [Header("FMOD Settings")] 
     public string globalParamName = "AMB_DUCK";
+
+    public void SetVolume(float volume)
+    {
+        _musicInstance.setVolume(volume);
+    }
+
     private EventInstance _musicInstance;
-    
     private const string StateParameter = "LitvarState";
     private const string StateSad = "Sad";
     private const string StateEpic = "Epic";
@@ -20,7 +26,7 @@ public class EpicTrigger : MonoBehaviour
         _musicInstance = RuntimeManager.CreateInstance(musicEvent);
         _musicInstance.start();
     }
-    
+
     private void OnDestroy()
     {
         _musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
@@ -39,10 +45,5 @@ public class EpicTrigger : MonoBehaviour
         // Sad Music
         _musicInstance.setParameterByNameWithLabel(StateParameter, StateSad);
         RuntimeManager.StudioSystem.setParameterByName(globalParamName, 0.0f);
-    }
-
-    public void SetVolume(float volume)
-    {
-        _musicInstance.setVolume(volume);
     }
 }

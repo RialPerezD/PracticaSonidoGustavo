@@ -1,6 +1,7 @@
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(BoxCollider))]
 public class MusicCrossFader : MonoBehaviour
@@ -19,6 +20,7 @@ public class MusicCrossFader : MonoBehaviour
 
     [Header("References")]
     public EpicTrigger epicTriggerScript;
+    public Layerer layererScript;
 
     private EventInstance musicInstance;
     private float currentBlend = 0.0f;
@@ -41,25 +43,29 @@ public class MusicCrossFader : MonoBehaviour
         if (Mathf.Abs(currentBlend - targetBlend) > 0.001f)
         {
             currentBlend = Mathf.MoveTowards(currentBlend, targetBlend, transitionSpeed * Time.deltaTime);
-
             musicInstance.setParameterByName(BlendParameter, currentBlend);
-
             musicInstance.setVolume(currentBlend);
 
             if (epicTriggerScript)
-            {
                 epicTriggerScript.SetVolume(1f - currentBlend);
-            }
+
+            if (layererScript)
+                layererScript.SetVolume(1f - currentBlend);
         }
 
         if (Input.GetKeyDown(KeyCode.I)) SwapToA();
         if (Input.GetKeyDown(KeyCode.O)) SwapToB();
-
-
     }
 
-    public void SwapToA() { targetBlend = 0f; }
-    public void SwapToB() { targetBlend = 1f; }
+    public void SwapToA()
+    {
+        targetBlend = 0f;
+    }
+
+    public void SwapToB()
+    {
+        targetBlend = 1f;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
