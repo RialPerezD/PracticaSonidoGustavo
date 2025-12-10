@@ -1,8 +1,8 @@
-En este proyecto se esta utilizando las librerias de sonido OpenAl y SoftAl junto con la libreria grafica de ESAT.
+In this project, the OpenAL and SoftAL audio libraries are used, along with the ESAT graphics library.
 
-En este proyecto es un demostrador de los apartados de la practica:
-	-"Crossfading" al realizar esta misma accion al cambio entre dia y noche y al entrar y salir de la taberna.
-	-"layering" con los pajaros o enemigos lanzando varias pistas en simultaneo
+This project serves as a demonstrator for the practical components, including:
+	-Crossfading, applied during the transition between day and night, as well as when entering and exiting the tavern.
+	-Layering, implemented through birds or enemies by playing multiple audio tracks simultaneously.
 
-Compilar este proyecto se debe ejecutar el script ./tools/genProyect.bat
-Para ejecutar el proyecto se debe abrir la solucion ./build/GameGustavo.sln y poner como startup project "Game"
+To compile the project, run the script ./tools/genProyect.bat.
+To run the project, open the solution located at ./build/GameGustavo.sln and set "Game" as the startup project.
