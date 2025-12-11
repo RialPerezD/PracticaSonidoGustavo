@@ -40,9 +40,14 @@ public class Layerer : MonoBehaviour
     #endregion
 
     /**
-     * @brief Sets the overall volume of the music instance.
+     * <summary>
+     * Sets the overall volume of the music instance.
      * This is somewhat legacy since this class was more for testing.
-     * @param volume The desired volume level (0.0f to 1.0f).
+     * </summary>
+     * 
+     * <param name = "volume">
+     * The desired volume level (0.0f to 1.0f).
+     * </param>
      */
     public void SetVolume(float volume)
     {

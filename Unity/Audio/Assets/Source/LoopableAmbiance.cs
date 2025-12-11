@@ -18,9 +18,16 @@ public class LoopableAmbiance : MonoBehaviour
     }
     
     /**
-    * @brief: Starts playing the ambiance sound at the specified source or world position.
-    * @param source: The Transform of the GameObject to attach the sound to.
-    * @param worldPos: The world position to play the sound at if no source is provided.
+    * <summary>
+     * Starts playing the ambiance sound at the specified source or world position.
+     * </summary>
+     *
+     * <param name = "source"> 
+    *  The Transform of the GameObject to attach the sound to.
+     * </param>
+     * <param name = "worldPos">
+     * The world position to play the sound at if no source is provided.
+     * </param>
     */
     public void StartAmbiance(Transform source, Vector3 worldPos)
     {
@@ -40,8 +47,13 @@ public class LoopableAmbiance : MonoBehaviour
     }
 
     /**
-     * @brief: Stops playing the ambiance sound, with an option to fade out.
-     * @param fadeOut: If true, the sound will fade out; otherwise, it will stop immediately.
+     * <summary>
+     * Stops playing the ambiance sound, with an option to fade out.
+     * </summary>
+     * 
+     * <param name =  "fadeOut">
+     * If true, the sound will fade out; otherwise, it will stop immediately.
+     * </param>
      */
     public void StopAmbience(bool fadeOut = true)
     {
